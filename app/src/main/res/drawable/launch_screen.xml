@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Un LayerList nos permite mostrar varios drawables, el ultimo que se declara
+es el que se dibuja encima de los demas y asi sucesivamente-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <!--para versiones antes del honeycomb de android se recomienda usar shape
+        para declarar el fondo-->
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white"/>
+        </shape>
+    </item>
+
+    <!--bottom="77dp" -> contiene el valor similar a padding aplicado desde el pivot especificado (bottom)-->
+    <!--gravity declara donde se situa el drawable en la pantalla-->
+    <item
+        android:height="250dp"
+        android:width="250dp"
+        android:bottom="77dp"
+        android:drawable="@drawable/ic_logo_02"
+        android:gravity="center">
+    </item>
+
+    <!--Show a image (png, jpeg)-->
+  <!--  <item android:bottom="20dp">
+        <bitmap
+            android:src="@drawable/launch_screen_144x144"
+            android:gravity="bottom|center"/>
+    </item>-->
+
+    <!--Show a vector drawable in the bottom-->
+    <item
+        android:height="150dp"
+        android:width="150dp"
+        android:drawable="@drawable/ic_logo_bottom"
+        android:gravity="center|bottom"/>
+
+
+</layer-list>
